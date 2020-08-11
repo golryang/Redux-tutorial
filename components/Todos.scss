@@ -1,0 +1,97 @@
+html {
+  background-color: #e9ecef;
+}
+
+.TodoTemplate {
+  width: 512px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .app-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    background: black;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: white;
+  }
+}
+
+.TodoInsert {
+  display: flex;
+  font-family: 'Nanum Gothic', sans-serif;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  justify-content: center;
+  input {
+    background: #495057;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    color: white;
+    flex: 1;
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    background: #868e96;
+    color: white;
+    padding-left: 1.35rem;
+    padding-right: 1.35rem;
+
+    cursor: pointer;
+    transition: 0.2s background ease-in;
+    &:hover {
+      background: #adb5bd;
+    }
+  }
+}
+
+.TodoListItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  .TodoCheckBox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+  }
+
+  span {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    word-break: break-all;
+    margin: auto 0.5rem;
+    flex: 1;
+  }
+
+  .remove {
+    color: #ff5f5f;
+    font-size: 1.35rem;
+    cursor: pointer;
+    &:hover {
+      color: #ee8383;
+    }
+  }
+
+  & + & {
+    border-top: 1.5px solid #dee2e6;
+  } //리스트 요소 사이 거리
+}
