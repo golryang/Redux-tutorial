@@ -7,11 +7,7 @@ import CounterContainer from './containers/CounterContainer';
 import TodosContainer from './containers/TodosContainer';
 // 커밋
 const App = () => {
-  return (
-    <div className="TodoTemplate">
-      <TodosContainer />
-    </div>
-  );
+  return <CounterContainer />;
 };
 
 export default App;

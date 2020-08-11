@@ -3,6 +3,7 @@ import React from 'react';
 const Counter = ({ number, onIncrease, onDecrease }) => {
   return (
     <div>
+      <span className="RCounter">Redux Counter</span>
       <h1>{number}</h1>
       <div>
         <button onClick={onIncrease}>+1</button>
